@@ -1,6 +1,21 @@
 /* Cache Capacity / Memory Latency Microbenchmark
 * ECE 592 Project 1
+* * Author Contribution:
+* I worked on the implementation, testing, execution, and analysis of this
+* cache reverse-engineering experiment. This included running the benchmark
+* on the course systems, selecting and testing working-set sizes, examining
+* the resulting latency measurements, and using the results to investigate
+* the behavior of the cache/memory hierarchy.
 *
+* AI Assistance Disclosure:
+* ChatGPT (OpenAI) was used as a programming and learning aid during the
+* development of this benchmark. It assisted with explaining the
+* pointer-chasing methodology, reviewing and improving portions of the C
+* implementation, organizing the random and sequential access experiments,
+* using RDTSC/RDTSCP with fencing for timing, calculating summary statistics,
+* producing CSV/metadata output, and troubleshooting compilation and
+* execution issues. I reviewed, tested, and executed the resulting code and
+* used the experimental results for my analysis.
 * Purpose:
 * This program measures dependent memory-access latency across different
 * working-set sizes using pointer chasing. The goal is to observe changes
