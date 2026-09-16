@@ -88,10 +88,10 @@
  * to enable the raw-L2 group; leave either at 0x0 and that group is
  * skipped (fields print as -1).
  * -------------------------------------------------------------------- */
-#define RAW_L2_EVENT_1 0x0ULL
-#define RAW_L2_EVENT_2 0x0ULL
-#define RAW_L2_NAME_1  "raw_l2_1"
-#define RAW_L2_NAME_2  "raw_l2_2"
+#define RAW_L2_EVENT_1 0xC124ULL
+#define RAW_L2_EVENT_2 0x2124ULL
+#define RAW_L2_NAME_1  "l2_rqsts.demand_data_rd_hit"
+#define RAW_L2_NAME_2  "l2_rqsts.demand_data_rd_miss"
 
 struct node {
     struct node *next;
